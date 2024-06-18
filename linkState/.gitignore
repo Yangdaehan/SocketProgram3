@@ -16,9 +16,9 @@ build/
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
+.idea
 
 ### IntelliJ IDEA ###
-.idea
 *.iws
 *.iml
 *.ipr
@@ -35,3 +35,5 @@ out/
 
 ### VS Code ###
 .vscode/
+
+application.yml
