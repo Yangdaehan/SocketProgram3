@@ -4,11 +4,9 @@ Intra Routing 알고리즘인 Link State 알고리즘을 사용하여 shortest p
 
 * Intra Routing 알고리즘인 Link State 알고리즘을 사용하여 shortest path를 구하는 C/S 프로그램
 * 클라이언트에는 전체 네트워크 토폴로지 정리를 보냄
-* 서버는 토폴로지 정보를 이용하여 최단 경로를 구한다.
-
-#
-#
-
+* 서버는 토폴로지 정보를 이용하여 최단 경로를 구한다.  
+  
+  
 ## Dijkstra 알고리즘 사용
 
 <img width="550" alt="스크린샷 2024-06-19 오전 2 49 58" src="https://github.com/Yangdaehan/socketServer4/assets/68599095/d59e0a18-98d5-474a-8987-f5425563d95e">
@@ -32,10 +30,8 @@ dist[4]와 dist[2] + (2->4)를 비교했을 때, dist[4]가 더 큼
 4번 노드에서의 비교를 마치면, dist = [0, 1, 2, 4, 12]
 5번 노드에서의 비교를 마치면, dist = [0, 1, 2, 4, 12]
 1번 노드에서 1, 2, 3, 4, 5번 노드로 가는데 걸리는 최소 비용 = 0, 1, 2, 4, 12
-
-#
-#
-
+  
+  
 ## 코드 구현
 이를 구현하기 위해 아래와 같이 코드를 작성하였습니다.
 
@@ -52,9 +48,7 @@ https://github.com/Yangdaehan/socketServer4/blob/46f8b84b7a59785f5b13ac6b178e30c
 4. 아직 처리되지 않은 노드 중 최소 거리를 가진 노드의 인덱스를 반환하는 메서드 'minDistance'
 https://github.com/Yangdaehan/socketServer4/blob/46f8b84b7a59785f5b13ac6b178e30c59d577e88/linkState/src/main/java/org/mse/linkstate/service/RoutingService.java#L38-L47
 
-#
-#
-
+  
 ## 실행 결과
 
 postman을 이용해서 시스템을 실행시켰습니다. 
