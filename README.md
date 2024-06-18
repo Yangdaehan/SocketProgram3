@@ -39,13 +39,13 @@ Intra Routing 알고리즘인 Link State 알고리즘을 사용하여 shortest p
 1. 무한대로 초기화
 * 먼저 모든 거리를 무한대로 초기화 합니다.
 https://github.com/Yangdaehan/socketServer4/blob/46f8b84b7a59785f5b13ac6b178e30c59d577e88/linkState/src/main/java/org/mse/linkstate/service/RoutingService.java#L18
-
+&nbsp;
 2. v-1 반복으로 최단 경로를 찾습니다. 아직 처리되지 않은 노드 중 최소 거리를 가진 노드를 선택하고, 만약 u에서 v로 가는 경로가 존재하고, u를 통해 v로 가는 것이 더 짧으면 dist[v]를 업데이트 합니다.
 https://github.com/Yangdaehan/socketServer4/blob/46f8b84b7a59785f5b13ac6b178e30c59d577e88/linkState/src/main/java/org/mse/linkstate/service/RoutingService.java#L21-L32
-
+&nbsp;
 3. 결과를 담을 Map 객체 생성하고 최단 경로 결과를 반환합니다.
 https://github.com/Yangdaehan/socketServer4/blob/46f8b84b7a59785f5b13ac6b178e30c59d577e88/linkState/src/main/java/org/mse/linkstate/service/RoutingService.java#L33-L35
-
+&nbsp;
 4. 아직 처리되지 않은 노드 중 최소 거리를 가진 노드의 인덱스를 반환하는 메서드 'minDistance'
 https://github.com/Yangdaehan/socketServer4/blob/46f8b84b7a59785f5b13ac6b178e30c59d577e88/linkState/src/main/java/org/mse/linkstate/service/RoutingService.java#L38-L47
 &nbsp;
