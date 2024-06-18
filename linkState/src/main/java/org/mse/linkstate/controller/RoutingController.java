@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/routing")
+@RequestMapping("/api")
 public class RoutingController {
 
     @Autowired
     private RoutingService routingService;
 
-    @PostMapping("/shortest-path")
+    @PostMapping("/link-state")
     public Map<String, Object> getShortestPath(@RequestBody Map<String, Object> request) {
         List<List<Integer>> adjacencyMatrix = (List<List<Integer>>) request.get("topology");
         int source = (Integer) request.get("source");
